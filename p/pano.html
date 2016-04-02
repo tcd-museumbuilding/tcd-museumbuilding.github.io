@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="a website dedicated to the Museum Building in Trinity College Dublin, Ireland">
+  <title> Museum Building | Trinity College Dublin</title>
+
+  <!--link favicon -->
+  <link rel="icon" type="image/x-icon" href="../img/ico/16x16.ico">
+  
+  <!--link the stylesheets, including normalize.css, master.css, ie.css-->
+  <!--<link rel="stylesheet" type="text/css" href="css/normalize.css" /> -->
+  <link rel="stylesheet" href="https://cdn.pannellum.org/2.2/pannellum.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/main.css" />
+
+  <!--link fonts, google fonts or font-awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet" type="text/css">
+
+  <!--link sniffing javascript, modernizr.js-->
+  <!--<script src="https://cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js"></script>-->
+</head>
+
+<body>
+
+  <!-- the start of the navigation section-->
+  <nav class="menu">
+    <div class="logo"> <a href="../index.html">Museum <br/> Building </a> </div>
+    <div class="group">
+      <input type="checkbox" id="css-toggle-menu" name="css-toggle-menu">
+      <ul>
+        <li class="menu-tab"> <a href="../index.html">Home</a></li>
+        <li class="menu-tab active"> <a href="pano.html">Tour</a> </li>
+        <li class="menu-tab"> <a href="gallery.html">Gallery</a></li>
+        <li class="menu-tab"> <a href="interview.html">Interview</a> </li>
+      </ul>
+      <label for="css-toggle-menu" ></label>
+    </div>
+    <div class="ghost-space"></div>
+  </nav>
+  <!-- the end of the navigation section-->
+
+  <!-- the start of the panorama -->
+  <section class="pano-bg-container">
+    <div class="pano-bg-img">
+      <div class="pano-content-wrapper">
+        <div class="pano-title">
+          <h1>A Virtual Tour of the Museum Building</h1>
+          <p>The Virtual Tour of the Main Hall presents you with a unique opportunity to visit the Museum Building and to experience its splendour and beauty without attending the site in person. You can view the Panorama below in full-screen mode for better immersion and zoom in to see particular features of interest up close. The Panorama exhibits twelve hotspots with additional information and interesting facts about the building’s history and architecture. Can you find all of them?</p>
+        </div>
+        <div class="pano-outer-wrapper">
+          <div class="pano-inner-wrapper">
+            <div id= "panorama"> </div>
+          </div>
+        </div>
+      </div> <!-- the end of pano-content-wrapper -->
+    </div>   <!-- the end of pano-bg-img -->
+  </section>
+  <!-- the end of the panorama -->
+
+<!-- the start of footer -->
+ <footer>
+  <div class="ft-container">
+    <div class="ft-left">
+      <span class="copyright">Copyright © 2016 <br />Museum Building Group, TCD</span>
+    </div>
+    <div class="ft-right">
+      <ul class="list-inline social-buttons">
+        <li><a href="https://www.flickr.com/photos/adriatic22/sets/72157665555145220" target="_blank"><i class="fa fa-flickr"></i></a>
+        </li>            
+        <li><a href="https://www.facebook.com/museumbuilding/" target="_blank"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li><a href="https://twitter.com/Museum_Building" target="_blank"><i class="fa fa-twitter"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- the end of footer -->
+
+
+  <!--link external javascript, jQuery plugin etc -->
+  <script type="text/javascript" src="https://cdn.pannellum.org/2.2/pannellum.js"></script>
+  <script> pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "../img/pano0316_4096.jpg",
+    "autoLoad": true,
+    "hotSpotDebug": false,
+    "hotSpots": [
+      {
+        "pitch": 26, 
+        "yaw": 14,
+        "type": "info",
+        "text": "The engineering side of the building",
+      },
+      {
+        "pitch": 26, 
+        "yaw": -12,
+        "type": "info",
+        "text": "The geological side of the building",
+      },
+      {
+        "pitch": 24, 
+        "yaw": 33,
+        "type": "info",
+        "text": "Portraits of engineering students and alumni who died in the First World War",
+      },
+      {
+        "pitch": 13, 
+        "yaw": 33,
+        "type": "info",
+        "text": "Marks visible from students sliding down the marble railings and holding on to the stairs with their feet",
+      },
+      {
+        "pitch": 50, 
+        "yaw": 52,
+        "type": "info",
+        "text": "The ceramic 'tiles' are in fact bricks with ceramic colouring on one side only",
+      },
+      {
+        "pitch": 70, 
+        "yaw": -20,
+        "type": "info",
+        "text": "The domes were inspired by Moorish architecture",
+      },
+      {
+        "pitch": 7, 
+        "yaw": -27,
+        "type": "info",
+        "text": "Green Connemara marble. The only true marble used in the interior of the building. Every other 'marble' is polished limestone",
+      },
+      {
+        "pitch": 33, 
+        "yaw": -47,
+        "type": "info",
+        "text": "Signature of the architects (DWD) carved in shield above small Connemara marble column",
+      },
+      {
+        "pitch": -5, 
+        "yaw": 121,
+        "type": "info",
+        "text": "Grease spot from students leaning against the column for over a hundred and fifty years",
+      },
+      {
+        "pitch": 35, 
+        "yaw": 135,
+        "type": "info",
+        "text": "The master stonemasons who carved the capitals and mouldings of the building were the legendary John & James O’Shea from Cork",
+      },
+      {
+        "pitch": -196, 
+        "yaw": 41,
+        "type": "info",
+        "text": "Fossil preserved in the limestone",
+      },
+      {
+        "pitch": -185, 
+        "yaw": -15,
+        "type": "info",
+        "text": "Giant Irish Deer",
+      },
+    ]
+  });
+  </script>
+
+  </body>
+</html>
