@@ -1,1 +1,1 @@
-# tcd-museumbuilding.github.io
+# This is a student website project for the museum building in TCD. 
