@@ -1,1 +1,1 @@
-# This is a student project for the museum building in TCD. 
+# This is a student project for the Museum Building in TCD. 
